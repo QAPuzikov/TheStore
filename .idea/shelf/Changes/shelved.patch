@@ -1,0 +1,18 @@
+Index: conftest.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/conftest.py b/conftest.py
+new file mode 100644
+--- /dev/null	(date 1734521428306)
++++ b/conftest.py	(date 1734521428306)
+@@ -0,0 +1,8 @@
++import  pytest
++@pytest.fixture()
++def pre_set():
++    print("\nStart test")
++    yield
++    print("\nFinish test")
++
++
